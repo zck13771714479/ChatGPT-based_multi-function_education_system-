@@ -1,0 +1,20 @@
+Implementation:
+Design Grade: 7
+
+Analysis Grade: 7
+
+Methodology: The project implements an application to transfer files between a client and a server by using the Simple Transfer and Exchange Protocol (STEP), a protocol based on TCP. The implementation process involved debugging a server application and developing a client application to establish a connection and upload files to the server. The client application implemented functions including user login, fetching tokens, and uploading files.
+
+Design: The client-server design was adopted in this project. The client application was designed to send STEP messages to the server, requesting to log in or upload the file, and the server responded according to the types of requests. The client application was developed using Python and its various libraries.
+
+Experiment analysis: The team conducted experiments to measure the upload speed of files of various sizes and the impact of block size on the upload speed. The results indicated that the upload speed was high for small files, with a slump between 30 MB and 80 MB, then it slowed down as the file size increased. When the block size was moderate, the transmission speed was rapid compared to when the size was excessively large or small. Furthermore, the upload speed of different types of files of the same size was tested, and it was found that the transmission rate was basically the same.
+
+Result:
+Grade: 8
+
+Result Conclusion: The project successfully designed a client application that could upload files to a server using the STEP protocol. The file upload function was successfully implemented, and the client could fetch tokens and apply for uploads. The experiment results showed that the application was able to handle different file sizes and types, and the performance was generally good.
+
+Evaluate: The quality of the experiment and the results are satisfactory. The team managed to implement the required functions and conduct thorough tests to evaluate the performance of the application.
+
+Improvement:
+Improvement Feedback: While the project successfully implemented the file uploading function, it did not cover other functions defined in STEP such as downloading and deleting. The client application could also be improved by allowing multiple files to be transferred at the same time rather than packing them into a zip file. Furthermore, the program currently requires command line input, which might be complex for users with little Python knowledge. A more straightforward and simple user interface could be designed.
